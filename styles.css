@@ -1,9 +1,10 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background-color: #15293F;
-  color: #ffffff;
+  background-color: #ffffff; /* jetzt weißer Hintergrund */
+  color: #15293F; /* jetzt dunkelblauer Text */
 }
+
 
 .container {
   display: flex;
