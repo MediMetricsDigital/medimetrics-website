@@ -9,11 +9,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  text-align: center;
 }
 
 header {
-  text-align: center;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 4rem 1rem 2rem 1rem;
 }
 
 h1 {
@@ -42,34 +42,4 @@ h1 {
 
 .cta-button:hover {
   background-color: #1d4ed8;
-}
-
-main {
-  text-align: center;
-  flex: 1;
-}
-
-/* Navigation */
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #15293F;
-  padding: 0.4rem 1.5rem; /* schmalere Leiste */
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-right a {
-  color: white;
-  margin-left: 1.5rem;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: opacity 0.2s ease;
-}
-
-.navbar-right a:hover {
-  opacity: 0.7;
 }
