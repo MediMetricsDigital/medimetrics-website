@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background-color: #ffffff; /* heller Hintergrund */
-  color: #15293F; /* dunkelblauer Text */
+  background-color: #ffffff;
+  color: #15293F;
 }
 
 .container {
@@ -14,12 +14,6 @@ body {
 header {
   text-align: center;
   padding: 3rem 1rem 2rem 1rem;
-}
-
-.logo,
-.nav-logo {
-  width: 60px;
-  margin-bottom: 1rem;
 }
 
 h1 {
@@ -55,33 +49,21 @@ main {
   flex: 1;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.3rem 1rem;
-  font-size: 12px;
-  background-color: #15293F;
-  color: white;
-}
-
+/* Navigation */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: #15293F;
-  padding: 0.8rem 1.5rem;
+  padding: 0.4rem 1.5rem; /* schmalere Leiste */
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.nav-logo {
-  height: 40px;
-}
-
 .navbar-right a {
   color: white;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
