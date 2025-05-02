@@ -1,11 +1,11 @@
-/* Reset & Box-Sizing */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Grundstruktur */
+/* Grundfarben */
 body {
   font-family: system-ui, sans-serif;
   background-color: #ffffff;
@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -22,8 +22,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border: none;
-  box-shadow: none;
 }
 .navbar-right a {
   color: #15293F;
@@ -37,21 +35,39 @@ body {
   color: #2E64FE;
 }
 
-/* Hero */
-header {
-  text-align: center;
-  padding: 6rem 1rem 4rem;
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
   background-color: #ffffff;
 }
-header h1 {
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+}
+.hero-text h1 {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
+  color: #15293F;
 }
-header .tagline {
+.hero-text .tagline {
   font-size: 1.25rem;
   color: #4B5C74;
   margin-bottom: 2rem;
 }
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CTA-Button */
 .cta-button {
   display: inline-block;
   background-color: #2E64FE;
@@ -67,7 +83,7 @@ header .tagline {
   background-color: #1d4ed8;
 }
 
-/* Sections */
+/* SECTIONS */
 section {
   padding: 4rem 1rem;
   max-width: 1200px;
@@ -158,4 +174,19 @@ section h2 {
 }
 #kontakt a:hover {
   text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text,
+  .hero-image {
+    max-width: 100%;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
 }
