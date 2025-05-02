@@ -1,54 +1,22 @@
-body {
+/* Reset & Box-Sizing */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grundstruktur */
+body {
   font-family: system-ui, sans-serif;
   background-color: #ffffff;
   color: #15293F;
+  line-height: 1.6;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  text-align: center;
-}
-
-header {
-  padding: 4rem 1rem 2rem 1rem;
-}
-
-h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.3rem;
-  color: #15293F;
-}
-
-.tagline {
-  font-size: 1.1rem;
-  color: #4B5C74;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  margin: 2rem auto;
-  background-color: #2E64FE;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #1d4ed8;
-}
-
-/* NAVIGATION */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   background-color: #ffffff;
   padding: 0.6rem 1.5rem;
   position: sticky;
@@ -57,80 +25,137 @@ h1 {
   border: none;
   box-shadow: none;
 }
-
-
-
 .navbar-right a {
-  color: #15293F; /* dein ehemaliger Hintergrundfarbton */
+  color: #15293F;
   margin-left: 1.5rem;
-  text-decoration: none; /* kein Unterstrich */
+  text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.2s ease;
 }
-
 .navbar-right a:hover {
-  color: #2E64FE; /* dezenter Hover-Effekt in Button-Blau */
+  color: #2E64FE;
 }
 
-.section-light {
+/* Hero */
+header {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
   background-color: #ffffff;
-  color: #15293F;
-  padding: 4rem 2rem;
-  text-align: center;
+}
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+header .tagline {
+  font-size: 1.25rem;
+  color: #4B5C74;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  display: inline-block;
+  background-color: #2E64FE;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #1d4ed8;
 }
 
-.section-dark {
-  background-color: #F5F7FA;
-  color: #15293F;
-  padding: 4rem 2rem;
-  text-align: center;
+/* Sections */
+section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: auto;
 }
-
-h2 {
-  font-size: 1.8rem;
+section h2 {
+  text-align: center;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #15293F;
 }
 
-.philosophie-text {
+/* About */
+#about p {
   max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #3A4B60;
-}
-
-.features {
+  margin: auto;
+  color: #4B5C74;
   text-align: center;
 }
 
-.feature-grid {
+/* Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.feature {
+  text-align: center;
+}
+.feature img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+.feature h3 {
+  margin-bottom: 0.5rem;
+}
+.feature p {
+  color: #4B5C74;
+}
+
+/* Pricing */
+.pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
-
-.feature-box {
-  background-color: white;
-  padding: 1.5rem;
+.card {
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(21, 41, 63, 0.1);
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.cta-section {
-  background-color: #2E64FE;
-  color: white;
+  padding: 1.5rem;
   text-align: center;
-  padding: 3rem 1rem;
 }
-
-.cta-section h2 {
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+.card .price {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: white;
+  color: #2E64FE;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  color: #4B5C74;
+}
+.card-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #2E64FE;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.card-button:hover {
+  background-color: #1d4ed8;
 }
 
+/* Kontakt */
+#kontakt p {
+  text-align: center;
+  color: #4B5C74;
+}
+#kontakt a {
+  color: #2E64FE;
+  text-decoration: none;
+  font-weight: 500;
+}
+#kontakt a:hover {
+  text-decoration: underline;
+}
