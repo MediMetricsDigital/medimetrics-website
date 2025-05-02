@@ -47,7 +47,7 @@ h1 {
 /* NAVIGATION */
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* rechtsbündig */
   align-items: center;
   background-color: #ffffff;
   padding: 0.6rem 1.5rem;
@@ -58,14 +58,14 @@ h1 {
 }
 
 .navbar-right a {
-  color: #15293F;
+  color: #15293F; /* dein ehemaliger Hintergrundfarbton */
   margin-left: 1.5rem;
-  text-decoration: none;
+  text-decoration: none; /* kein Unterstrich */
   font-weight: 500;
   font-size: 1rem;
-  transition: opacity 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .navbar-right a:hover {
-  opacity: 0.7;
+  color: #2E64FE; /* dezenter Hover-Effekt in Button-Blau */
 }
