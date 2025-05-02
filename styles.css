@@ -72,3 +72,65 @@ h1 {
 .navbar-right a:hover {
   color: #2E64FE; /* dezenter Hover-Effekt in Button-Blau */
 }
+
+.section-light {
+  background-color: #ffffff;
+  color: #15293F;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-dark {
+  background-color: #F5F7FA;
+  color: #15293F;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #15293F;
+}
+
+.philosophie-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #3A4B60;
+}
+
+.features {
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-box {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(21, 41, 63, 0.1);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.cta-section {
+  background-color: #2E64FE;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
