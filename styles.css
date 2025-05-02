@@ -47,15 +47,16 @@ h1 {
 /* NAVIGATION */
 .navbar {
   display: flex;
-  justify-content: flex-end; /* rechtsbündig */
+  justify-content: flex-end;
   align-items: center;
   background-color: #ffffff;
   padding: 0.6rem 1.5rem;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid #e0e0e0;
+  /* border-bottom entfernt */
 }
+
 
 .navbar-right a {
   color: #15293F; /* dein ehemaliger Hintergrundfarbton */
