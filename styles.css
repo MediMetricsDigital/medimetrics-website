@@ -41,7 +41,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 2rem;
-  position: relative;
   overflow: visible;
 }
 .hero-text {
@@ -49,7 +48,7 @@ body {
   max-width: 55%;
   position: relative;
   z-index: 2;
-  margin-right: -15%; /* starkes Überlappen */
+  margin-right: -5%; /* Text überlappt leicht das Bild */
 }
 .hero-text h1 {
   font-size: 3rem;
@@ -65,14 +64,11 @@ body {
 }
 .hero-image {
   flex: 1;
-  max-width: 60%;
+  max-width: 50%;
   text-align: right;
-  position: relative;
-  z-index: 1;
-  margin-left: -10%; /* Bild etwas nach links */
 }
 .hero-image img {
-  max-width: 120%; /* größerziehen */
+  max-width: 110%; /* Bild etwas größer ziehen */
   height: auto;
   display: block;
 }
@@ -195,7 +191,6 @@ section h2 {
   .hero-image {
     max-width: 100%;
     margin-right: 0;
-    margin-left: 0;
   }
   .hero-image {
     margin-top: 2rem;
