@@ -65,14 +65,15 @@ body {
 
 /* Überschrift */
 .hero-text h1 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 5rem;     /* jetzt viel größer */
   line-height: 1.1;
   margin-bottom: 1rem;
 }
 
-/* Tagline */
 .hero-text .tagline {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: 2.5rem;   /* deutlich größer */
   line-height: 1.3;
   color: #4B5C74;
   margin-bottom: 2rem;
