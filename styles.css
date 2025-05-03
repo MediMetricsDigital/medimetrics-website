@@ -9,7 +9,7 @@
 body {
   font-family: system-ui, sans-serif;
   background-color: #ffffff;
-  color: #15293F;
+  color: #264259;
   line-height: 1.6;
 }
 
@@ -24,7 +24,7 @@ body {
   z-index: 1000;
 }
 .navbar-right a {
-  color: #15293F;
+  color: #264259;
   margin-left: 1rem;
   text-decoration: none;
   font-weight: 500;
@@ -55,7 +55,7 @@ body {
   font-size: clamp(3rem, 12vw, 8rem);
   line-height: 1.1;
   margin-bottom: 1rem;
-  color: #15293F;
+  color: #264259;
 }
 .hero-text .tagline {
   font-size: clamp(1rem, 4vw, 2.5rem);
