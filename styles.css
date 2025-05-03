@@ -55,7 +55,7 @@ body {
   width: 50%;
   position: relative;
   z-index: 1;
-  margin-left: -20%;    /* 20% Überlappung */
+  margin-left: -5%;    /* 20% Überlappung */
 }
 .hero-image img {
   display: block;
