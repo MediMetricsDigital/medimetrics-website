@@ -65,7 +65,7 @@ body {
 }
 .hero-image {
   position: absolute;
-  bottom: -5%;   /* ragt 5% der Hero-Höhe nach unten hinaus */
+  bottom: -25%;   /* ragt 5% der Hero-Höhe nach unten hinaus */
   right: 5%;
   width: 45%;
   z-index: 1;
