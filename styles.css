@@ -65,8 +65,8 @@ body {
 }
 .hero-image {
   position: absolute;
-  bottom: -65%;   /* ragt x% der Hero-Höhe nach unten hinaus */
-  margin-left: -20%;  /* Bild zieht sich um 20% in die Text-Spalte */
+  bottom: -85%;   /* ragt x% der Hero-Höhe nach unten hinaus */
+  margin-left: -40%;  /* Bild zieht sich um 20% in die Text-Spalte */
   right: 5%;
   width: 45%;
   z-index: 1;
