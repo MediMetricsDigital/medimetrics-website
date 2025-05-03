@@ -65,11 +65,13 @@ body {
 
 /* Überschrift */
 .hero-text h1 {
-  /* nie kleiner als 2rem, relativ 8vw, nie größer als 5rem */
-  font-size: clamp(2rem, 8vw, 5rem);
+  /* nie kleiner als 3rem, relativ 12vw, nie größer als 8rem */
+  font-size: clamp(3rem, 12vw, 8rem);
   line-height: 1.1;
   margin-bottom: 1rem;
+  color: #15293F;  /* exakter Farbcode für Dunkelblau */
 }
+
 
 .hero-text .tagline {
   /* nie kleiner als 1rem, relativ 4vw, nie größer als 2.5rem */
