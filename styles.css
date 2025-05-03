@@ -203,3 +203,36 @@ section h2 {
     margin-top: 2rem;
   }
 }
+
+/* Vollbreite Hero und geringere Außenabstände */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: visible;
+  width: 100%;      /* nimmt die gesamte Breite ein */
+  max-width: none;  /* hebt die Beschränkung auf 1200px auf */
+  margin: 0;        /* kein zentrierter Abstand mehr */
+  padding: 2rem 1rem; /* reduces left/right padding */
+}
+
+/* Textspalte etwas breiter, damit sie an den Rand reicht */
+.hero-text {
+  width: 48%;      /* vorher 50% – hier minimal kleiner, damit Überlappung bleibt */
+  left: 4%;        /* verschiebt den Text weiter nach links */
+}
+
+/* Bildspalte entsprechend anpassen */
+.hero-image {
+  width: 48%;
+  margin-left: -20%; /* beibehaltung der 20% Überlappung */
+}
+
+/* Zum Vergleich: so steht alles bündig am Rand */
+.hero-bg,
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
