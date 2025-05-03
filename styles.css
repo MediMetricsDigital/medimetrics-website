@@ -35,31 +35,32 @@ body {
   color: #2E64FE;
 }
 
-/* HERO: Einspaltig, Bild als Hintergrund, Text als Overlay */
+/* HERO: Zwei Spalten mit 20% Überlappung */
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  width: 100%;
+  overflow: visible;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: visible;
+  padding: 4rem 2rem;
 }
-
-/* Hintergrundbild */
-.hero-bg {
+.hero-text {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+.hero-image {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  margin-left: -20%;    /* 20% Überlappung */
+}
+.hero-image img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
-}
-
-/* Text-Overlay */
-.hero-text {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 50%;
-  color: #15293F;
-  z-index: 2;
 }
 
 /* Überschrift */
@@ -187,10 +188,16 @@ section h2 {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-text {
-    position: static;
-    width: 100%;
-    margin: 2rem auto 0 auto;
+  .hero {
+    flex-direction: column;
     text-align: center;
+  }
+  .hero-text,
+  .hero-image {
+    width: 100%;
+    margin-left: 0;
+  }
+  .hero-text {
+    margin-top: 2rem;
   }
 }
