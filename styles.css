@@ -5,11 +5,21 @@
   box-sizing: border-box;
 }
 
+/* Farbpalette als CSS-Variablen */
+:root {
+  --dark-navy:   #243956;  /* Navbar, Überschriften */
+  --white:       #ffffff;  /* Hintergrund, Schrift */
+  --medium-blue: #33517a;  /* Hover-States, akzente */
+  --deep-blue:   #152132;  /* Fließtext, Hero-Text */
+  --light-gray:  #e6e6e6;  /* Sektionen, Kartenränder */
+  --violet:      #42399e;  /* Buttons, Preise */
+}
+
 /* Grundlayout */
 body {
   font-family: system-ui, sans-serif;
-  background-color: #ffffff;
-  color: #264259;
+  background-color: var(--white);
+  color: var(--deep-blue);
   line-height: 1.6;
 }
 
@@ -17,14 +27,14 @@ body {
 .navbar {
   display: flex;
   justify-content: flex-end;
-  background-color: #ffffff;
+  background-color: var(--dark-navy);
   padding: 0.6rem 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 .navbar-right a {
-  color: #264259;
+  color: var(--white);
   margin-left: 1rem;
   text-decoration: none;
   font-weight: 500;
@@ -32,7 +42,7 @@ body {
   transition: color 0.2s ease;
 }
 .navbar-right a:hover {
-  color: #2E64FE;
+  color: var(--medium-blue);
 }
 
 /* HERO: Diagonal versetzt mit 20% Überlappung */
@@ -55,18 +65,18 @@ body {
   font-size: clamp(3rem, 12vw, 8rem);
   line-height: 1.1;
   margin-bottom: 1rem;
-  color: #264259;
+  color: var(--dark-navy);
 }
 .hero-text .tagline {
   font-size: clamp(1rem, 4vw, 2.5rem);
   line-height: 1.3;
-  color: #4B5C74;
+  color: var(--medium-blue);
   margin-bottom: 2rem;
 }
 .hero-image {
   position: absolute;
-  bottom: -25%;   /* hebt das Bild um 50% der Hero-Höhe nach oben */
-  right: 2%;      /* rückt das Bild nah an den rechten Rand */
+  bottom: -25%;
+  right: 2%;
   width: 35%;
   z-index: 1;
 }
@@ -80,18 +90,20 @@ body {
 section {
   padding: 4rem 1rem;
   max-width: none;
+  background-color: var(--white);
 }
 section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: var(--dark-navy);
 }
 
 /* About */
 #about p {
   max-width: 800px;
   margin: auto;
-  color: #4B5C74;
+  color: var(--deep-blue);
   text-align: center;
 }
 
@@ -107,12 +119,14 @@ section h2 {
 .feature img {
   width: 60px;
   margin-bottom: 1rem;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(47%) saturate(1960%) hue-rotate(184deg) brightness(92%) contrast(91%); /* Icon in Palette */
 }
 .feature h3 {
   margin-bottom: 0.5rem;
+  color: var(--dark-navy);
 }
 .feature p {
-  color: #4B5C74;
+  color: var(--medium-blue);
 }
 
 /* Pricing */
@@ -123,27 +137,29 @@ section h2 {
   margin-bottom: 2rem;
 }
 .card {
-  border: 1px solid #e0e0e0;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
 }
 .card h3 {
   margin-bottom: 0.5rem;
+  color: var(--dark-navy);
 }
 .card .price {
   font-size: 1.5rem;
-  color: #2E64FE;
+  color: var(--violet);
   margin-bottom: 0.5rem;
 }
 .card p {
-  color: #4B5C74;
+  color: var(--deep-blue);
 }
 .card-button {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #2E64FE;
-  color: #ffffff;
+  background-color: var(--violet);
+  color: var(--white);
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
@@ -151,21 +167,22 @@ section h2 {
   transition: background-color 0.3s ease;
 }
 .card-button:hover {
-  background-color: #1d4ed8;
+  background-color: var(--medium-blue);
 }
 
 /* Kontakt */
 #kontakt p {
   text-align: center;
-  color: #4B5C74;
+  color: var(--deep-blue);
 }
 #kontakt a {
-  color: #2E64FE;
+  color: var(--violet);
   text-decoration: none;
   font-weight: 500;
 }
 #kontakt a:hover {
   text-decoration: underline;
+  color: var(--medium-blue);
 }
 
 /* Responsive: mobile untereinander */
