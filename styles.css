@@ -52,7 +52,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 4rem 1rem 25rem;
+  padding: 4rem 1rem 50rem;
   min-height: 60vh;
   overflow: visible;
   background-color: var(--white-off);
