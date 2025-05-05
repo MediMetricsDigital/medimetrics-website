@@ -9,7 +9,7 @@
 :root {
   --dark-navy:   #243956;
   --white:       #ffffff;
-  --white-off:   #FAFAFA;
+  --white-off:   #EDEDED;
   --medium-blue: #33517a;
   --deep-blue:   #152132;
   --light-gray:  #e6e6e6;
@@ -20,7 +20,7 @@
 /* Grundlayout */
 body {
   font-family: system-ui, sans-serif;
-  background-color: var(--white-off);
+  background-color: var(--white);
   color: var(--deep-blue);
   line-height: 1.6;
 }
@@ -36,7 +36,7 @@ body {
   z-index: 1000;
 }
 .navbar-right a {
-  color: var(--white-off);
+  color: var(--white);
   margin-left: 1rem;
   text-decoration: none;
   font-weight: 500;
@@ -47,12 +47,12 @@ body {
   color: var(--medium-blue);
 }
 
-/* HERO: weniger off-white unten */
+/* HERO */
 .hero {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 4rem 1rem 16rem; /* statt 16rem nur 12rem off-white */
+  padding: 4rem 1rem 20rem;
   min-height: 60vh;
   overflow: visible;
   background-color: var(--white-off);
@@ -61,7 +61,7 @@ body {
   position: absolute;
   top: 10%;
   left: 5%;
-  width: 40%;
+  width: 50%;
   z-index: 2;
 }
 .hero-text h1 {
@@ -78,9 +78,9 @@ body {
 }
 .hero-image {
   position: absolute;
-  bottom: -5%;
+  bottom: -25%;
   right: 2%;
-  width: 35%;
+  width: 50%;
   z-index: 1;
 }
 .hero-image img {
@@ -93,7 +93,7 @@ body {
 section {
   padding: 4rem 1rem;
   max-width: none;
-  background-color: var(--white-off);
+  background-color: var(--white);
 }
 section h2 {
   text-align: center;
@@ -102,33 +102,17 @@ section h2 {
   color: var(--dark-navy);
 }
 
-/* Unser Leitbild */
+/* Unser Leitbild als EIN Block, volle Breite */
 #about {
   background-color: var(--white-off);
 }
-
-/* Grid-Container für zwei Spalten */
-.about-grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 2rem;
+#about h2 {
+  margin-bottom: 2rem;
 }
-
-/* Linke Spalte wie Hero-Text */
-.about-left {
-  width: 40%;
-}
-
-/* Rechte Spalte wie Symbolbild */
-.about-right {
-  width: 35%;
-}
-
-/* Gemeinsame Text-Regeln mit Blocksatz */
 .about-text {
+  max-width: none;            /* kein zentrales Limit */
+  margin: 0 auto;             /* zentriert, aber füllt die Breite */
+  padding: 0 2rem;            /* innen Abstand links/rechts */
   color: var(--deep-blue);
   text-align: justify;
   line-height: 1.7;
@@ -216,7 +200,7 @@ section h2 {
 /* Responsive */
 @media (max-width: 768px) {
   .hero {
-    padding: 3rem 1rem 3rem;
+    padding: 3rem 1rem 8rem;
     min-height: auto;
   }
   .hero-text,
@@ -230,9 +214,8 @@ section h2 {
     margin-top: 2rem;
   }
 
-  /* Leitbild untereinander */
-  .about-left,
-  .about-right {
-    width: 100%;
+  /* Leitbild auch auf Mobile volle Breite */
+  .about-text {
+    padding: 0 1rem;
   }
 }
