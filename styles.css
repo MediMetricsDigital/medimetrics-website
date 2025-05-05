@@ -52,7 +52,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 4rem 1rem 30rem; /* statt 16rem nur 12rem off-white */
+  padding: 4rem 1rem 16rem; /* statt 16rem nur 12rem off-white */
   min-height: 60vh;
   overflow: visible;
   background-color: var(--white-off);
@@ -119,12 +119,12 @@ section h2 {
 
 /* Linke Spalte wie Hero-Text */
 .about-left {
-  width: 50%;
+  width: 40%;
 }
 
 /* Rechte Spalte wie Symbolbild */
 .about-right {
-  width: 50%;
+  width: 35%;
 }
 
 /* Gemeinsame Text-Regeln mit Blocksatz */
