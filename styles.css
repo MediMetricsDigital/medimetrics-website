@@ -36,7 +36,7 @@ body {
   z-index: 1000;
 }
 .navbar-right a {
-  color: var(--white);
+  color: var(--white-off);
   margin-left: 1rem;
   text-decoration: none;
   font-weight: 500;
