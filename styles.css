@@ -20,7 +20,7 @@
 /* Grundlayout */
 body {
   font-family: system-ui, sans-serif;
-  background-color: var(--white);
+  background-color: var(--white-off);
   color: var(--deep-blue);
   line-height: 1.6;
 }
