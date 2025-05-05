@@ -78,7 +78,7 @@ body {
 }
 .hero-image {
   position: absolute;
-  bottom: 10%;
+  bottom: -10%;
   right: 2%;
   width: 35%;
   z-index: 1;
