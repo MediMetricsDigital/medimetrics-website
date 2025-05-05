@@ -7,14 +7,14 @@
 
 /* Farbpalette als CSS-Variablen */
 :root {
-  --dark-navy:   #152132;  /* Navbar, Headlines */
-  --white:       #ffffff;  /* Standard-Hintergrund */
-  --white-off:   #FAFAFA;  /* Hero- & Leitbild-Hintergrund */
-  --medium-blue: #33517a;  /* Hover-States, Akzente */
-  --deep-blue:   #152132;  /* Fließtext, Hero-Text */
-  --light-gray:  #e6e6e6;  /* Kartenränder, Sektionen-Hintergrund */
-  --gray:        #777777;  /* dunkleres Grau für Tagline o.ä. */
-  --violet:      #42399e;  /* Buttons, Preise */
+  --dark-navy:   #243956;
+  --white:       #ffffff;
+  --white-off:   #FAFAFA;
+  --medium-blue: #33517a;
+  --deep-blue:   #152132;
+  --light-gray:  #e6e6e6;
+  --gray:        #777777;
+  --violet:      #42399e;
 }
 
 /* Grundlayout */
@@ -47,17 +47,16 @@ body {
   color: var(--medium-blue);
 }
 
-/* HERO: Diagonal versetzt mit 20% Überlappung und abweichendem Weiß */
+/* HERO: weniger off-white unten */
 .hero {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 4rem 1rem 16rem; /* deutlich mehr off-white am Boden */
+  padding: 4rem 1rem 12rem; /* statt 16rem nur noch 12rem */
   min-height: 60vh;
   overflow: visible;
   background-color: var(--white-off);
 }
-
 .hero-text {
   position: absolute;
   top: 10%;
@@ -65,21 +64,18 @@ body {
   width: 40%;
   z-index: 2;
 }
-
 .hero-text h1 {
   font-size: clamp(3rem, 12vw, 8rem);
   line-height: 1.1;
   margin-bottom: 1rem;
   color: var(--dark-navy);
 }
-
 .hero-text .tagline {
   font-size: clamp(1rem, 4vw, 2.5rem);
   line-height: 1.3;
   color: var(--gray);
   margin-bottom: 2rem;
 }
-
 .hero-image {
   position: absolute;
   bottom: -25%;
@@ -106,7 +102,7 @@ section h2 {
   color: var(--dark-navy);
 }
 
-/* Unser Leitbild (About) */
+/* Unser Leitbild – gleiche Breite wie Hero-Text */
 #about {
   background-color: var(--white-off);
 }
@@ -114,8 +110,9 @@ section h2 {
   color: var(--dark-navy);
 }
 .about-text {
-  max-width: 800px;
-  margin: 0 auto 1.5rem auto;
+  position: relative;
+  width: 40%;             /* exakt wie Hero-Text */
+  margin: 0 0 1.5rem 5%;   /* 5% links, Blocksatz */
   color: var(--deep-blue);
   text-align: justify;
   line-height: 1.7;
@@ -203,7 +200,7 @@ section h2 {
   color: var(--medium-blue);
 }
 
-/* Responsive: mobile untereinander */
+/* Responsive */
 @media (max-width: 768px) {
   .hero {
     padding: 3rem 1rem 3rem;
@@ -218,5 +215,11 @@ section h2 {
   }
   .hero-image {
     margin-top: 2rem;
+  }
+
+  /* Leitbild unter Hero, volle Breite */
+  .about-text {
+    width: 100%;
+    margin: 0 auto 1.5rem auto;
   }
 }
