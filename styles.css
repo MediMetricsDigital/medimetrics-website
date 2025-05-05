@@ -7,7 +7,7 @@
 
 /* Farbpalette als CSS-Variablen */
 :root {
-  --dark-navy:   #243956;  /* Navbar, Headlines */
+  --dark-navy:   #152132;  /* Navbar, Headlines */
   --white:       #ffffff;  /* Standard-Hintergrund */
   --white-off:   #FAFAFA;  /* Hero- & Leitbild-Hintergrund */
   --medium-blue: #33517a;  /* Hover-States, Akzente */
