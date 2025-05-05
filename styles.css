@@ -9,11 +9,11 @@
 :root {
   --dark-navy:   #243956;  /* Navbar, Headlines */
   --white:       #ffffff;  /* Standard-Hintergrund */
-  --white-off:   #FAFAFA;  /* Hero-Hintergrund */
+  --white-off:   #FAFAFA;  /* Hero- & Leitbild-Hintergrund */
   --medium-blue: #33517a;  /* Hover-States, Akzente */
   --deep-blue:   #152132;  /* Fließtext, Hero-Text */
-  --light-gray:  #e6e6e6;  /* Kartenränder, Sektionen-Hintergrund (falls nötig) */
-  --gray:        #999999;  /* dunkleres Grau für Tagline o.ä. */
+  --light-gray:  #e6e6e6;  /* Kartenränder, Sektionen-Hintergrund */
+  --gray:        #777777;  /* dunkleres Grau für Tagline o.ä. */
   --violet:      #42399e;  /* Buttons, Preise */
 }
 
@@ -52,7 +52,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 4rem 1rem 25rem;
+  padding: 4rem 1rem 16rem; /* deutlich mehr off-white am Boden */
   min-height: 60vh;
   overflow: visible;
   background-color: var(--white-off);
@@ -82,7 +82,7 @@ body {
 
 .hero-image {
   position: absolute;
-  bottom: -15%;
+  bottom: -25%;
   right: 2%;
   width: 35%;
   z-index: 1;
@@ -106,12 +106,22 @@ section h2 {
   color: var(--dark-navy);
 }
 
-/* About */
-#about p {
+/* Unser Leitbild (About) */
+#about {
+  background-color: var(--white-off);
+}
+#about h2 {
+  color: var(--dark-navy);
+}
+.about-text {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto 1.5rem auto;
   color: var(--deep-blue);
-  text-align: center;
+  text-align: justify;
+  line-height: 1.7;
+}
+.about-text:last-child {
+  margin-bottom: 0;
 }
 
 /* Features */
@@ -192,27 +202,6 @@ section h2 {
   text-decoration: underline;
   color: var(--medium-blue);
 }
-
-/* Leitbild-Text im Blocksatz */
-#about {
-  background-color: var(--white-off); /* bleibt auf off-white, wenn gewünscht */
-}
-#about h2 {
-  color: var(--dark-navy);
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.about-text {
-  max-width: 800px;
-  margin: 0 auto 1.5rem auto;
-  color: var(--deep-blue);
-  text-align: justify;      /* Blocksatz */
-  line-height: 1.7;
-}
-.about-text:last-child {
-  margin-bottom: 0;
-}
-
 
 /* Responsive: mobile untereinander */
 @media (max-width: 768px) {
