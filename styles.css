@@ -52,7 +52,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 4rem 1rem 12rem; /* statt 16rem nur 12rem off-white */
+  padding: 4rem 1rem 16rem; /* statt 16rem nur 12rem off-white */
   min-height: 60vh;
   overflow: visible;
   background-color: var(--white-off);
@@ -61,7 +61,7 @@ body {
   position: absolute;
   top: 10%;
   left: 5%;
-  width: 40%;
+  width: 50%;  /* jetzt 50% Breite */
   z-index: 2;
 }
 .hero-text h1 {
@@ -80,7 +80,7 @@ body {
   position: absolute;
   bottom: -25%;
   right: 2%;
-  width: 35%;
+  width: 50%;  /* jetzt 50% Breite */
   z-index: 1;
 }
 .hero-image img {
@@ -117,14 +117,14 @@ section h2 {
   gap: 2rem;
 }
 
-/* Linke Spalte wie Hero-Text */
+/* Linke Spalte: 50% */
 .about-left {
-  width: 40%;
+  width: 50%;
 }
 
-/* Rechte Spalte wie Symbolbild */
+/* Rechte Spalte: 50% */
 .about-right {
-  width: 35%;
+  width: 50%;
 }
 
 /* Gemeinsame Text-Regeln mit Blocksatz */
