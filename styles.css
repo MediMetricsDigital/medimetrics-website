@@ -9,7 +9,7 @@
 :root {
   --dark-navy:   #243956;
   --white:       #ffffff;
-  --white-off:   #FAFAFA;
+  --white-off:   #EDEDED;   /* etwas dunkleres Off-White */
   --medium-blue: #33517a;
   --deep-blue:   #152132;
   --light-gray:  #e6e6e6;
@@ -47,12 +47,12 @@ body {
   color: var(--medium-blue);
 }
 
-/* HERO: weniger off-white unten */
+/* HERO: mehr Off-White am Desktop, weniger am Mobile */
 .hero {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 4rem 1rem 16rem; /* statt 16rem nur 12rem off-white */
+  padding: 4rem 1rem 20rem; /* ↑ Desktop: 20rem unten */
   min-height: 60vh;
   overflow: visible;
   background-color: var(--white-off);
@@ -61,7 +61,7 @@ body {
   position: absolute;
   top: 10%;
   left: 5%;
-  width: 40%;
+  width: 50%;
   z-index: 2;
 }
 .hero-text h1 {
@@ -80,7 +80,7 @@ body {
   position: absolute;
   bottom: -25%;
   right: 2%;
-  width: 35%;
+  width: 50%;
   z-index: 1;
 }
 .hero-image img {
@@ -116,18 +116,12 @@ section h2 {
   margin: 0 auto;
   gap: 2rem;
 }
-
-/* Linke Spalte wie Hero-Text */
 .about-left {
-  width: 40%;
+  width: 50%;
 }
-
-/* Rechte Spalte wie Symbolbild */
 .about-right {
-  width: 35%;
+  width: 50%;
 }
-
-/* Gemeinsame Text-Regeln mit Blocksatz */
 .about-text {
   color: var(--deep-blue);
   text-align: justify;
@@ -216,7 +210,7 @@ section h2 {
 /* Responsive */
 @media (max-width: 768px) {
   .hero {
-    padding: 3rem 1rem 3rem;
+    padding: 3rem 1rem 8rem; /* ↓ Mobile: nur 8rem off-white */
     min-height: auto;
   }
   .hero-text,
