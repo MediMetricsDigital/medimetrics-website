@@ -104,7 +104,7 @@ section h2 {
 
 /* Unser Leitbild – gleiche Breite wie Hero-Text */
 #about {
-  background-color: var(--white-off);
+  background-color: var(--white);
 }
 #about h2 {
   color: var(--dark-navy);
