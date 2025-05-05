@@ -52,7 +52,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 4rem 1rem 50rem;
+  padding: 4rem 1rem 25rem;
   min-height: 60vh;
   overflow: visible;
   background-color: var(--white-off);
@@ -192,6 +192,27 @@ section h2 {
   text-decoration: underline;
   color: var(--medium-blue);
 }
+
+/* Leitbild-Text im Blocksatz */
+#about {
+  background-color: var(--white-off); /* bleibt auf off-white, wenn gewünscht */
+}
+#about h2 {
+  color: var(--dark-navy);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about-text {
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  color: var(--deep-blue);
+  text-align: justify;      /* Blocksatz */
+  line-height: 1.7;
+}
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
 
 /* Responsive: mobile untereinander */
 @media (max-width: 768px) {
