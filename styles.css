@@ -9,7 +9,6 @@
 :root {
   --dark-navy:   #243956;
   --white:       #F9F9F9;  /* leicht gedämpftes Weiß für den Seitenhintergrund */
-  --white-off:   #EDEDED;
   --medium-blue: #33517a;
   --deep-blue:   #152132;
   --light-gray:  #e6e6e6;
@@ -36,7 +35,7 @@ body {
   z-index: 1000;
 }
 .navbar-right a {
-  color: var(--white-off);
+  color: var(--white);
   margin-left: 1rem;
   text-decoration: none;
   font-weight: 500;
@@ -55,7 +54,7 @@ body {
   padding: 4rem 1rem 20rem;
   min-height: 60vh;
   overflow: visible;
-  background-color: var(--white-off);
+  background-color: var(--white);
 }
 .hero-text {
   position: absolute;
@@ -80,7 +79,7 @@ body {
   position: absolute;
   bottom: -25%;
   right: 2%;
-  width: 40%;  /* von 50% auf 40% reduziert */
+  width: 38%;  /* von 50% auf 40% reduziert */
   z-index: 1;
 }
 .hero-image img {
@@ -104,7 +103,7 @@ section h2 {
 
 /* Unser Leitbild als EIN Block, volle Breite */
 #about {
-  background-color: var(--white-off);
+  background-color: var(--white);
 }
 #about h2 {
   margin-bottom: 2rem;
@@ -149,7 +148,7 @@ section h2 {
   margin-bottom: 2rem;
 }
 .card {
-  background-color: var(--white-off);
+  background-color: var(--white);
   border: 1px solid var(--light-gray);
   border-radius: 8px;
   padding: 1.5rem;
@@ -171,7 +170,7 @@ section h2 {
   display: inline-block;
   margin-top: 1rem;
   background-color: var(--violet);
-  color: var(--white-off);
+  color: var(--white);
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
