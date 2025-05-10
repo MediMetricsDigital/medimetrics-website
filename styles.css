@@ -108,10 +108,11 @@ section h2 {
 #about h2 {
   margin-bottom: 2rem;
 }
-.about-text {
+#about .about-text {
   max-width: none;
-  margin: 0 auto;
-  padding: 0 2rem;
+  margin: 0;
+  padding-left: 5%;  /* ← hier */
+  padding-right: 5%;
   color: var(--deep-blue);
   text-align: justify;
   line-height: 1.7;
